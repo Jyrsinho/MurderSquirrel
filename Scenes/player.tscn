@@ -47,14 +47,15 @@ animations = [{
 radius = 20.025
 
 [node name="Player" type="CharacterBody2D"]
+position = Vector2(71, -10)
 collision_layer = 2
 script = ExtResource("1_n57lh")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(95, -38)
+[node name="PlayerSprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(5, -13)
 sprite_frames = SubResource("SpriteFrames_v4e20")
 animation = &"jump"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(94, -27)
+position = Vector2(1, -1)
 shape = SubResource("CircleShape2D_4x5kq")
